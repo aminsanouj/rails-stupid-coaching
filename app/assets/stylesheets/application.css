@@ -1,15 +1,99 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles communs */
+.message {
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 4px solid #ccc;
+}
+
+.message p {
+  margin: 5px 0;
+}
+
+.user .author,
+.coach .author {
+  font-style: italic;
+  color: gray;
+}
+
+.coach {
+  background-color: #ffffe0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.ask-question {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.ask-question:hover {
+  text-decoration: underline;
+}
+
+/* Styles spécifiques à la page "Answer" */
+.answer-page .message {
+  /* Custom styles for answer page messages if needed */
+}
+
+.answer-page .ask-question {
+  /* Custom styles for answer page ask-question link if needed */
+}
+
+/* Styles spécifiques à la page "Ask" */
+.ask-page .ask-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ask-page .ask-form label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.ask-page .ask-form input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.ask-page .ask-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ask-page .ask-form button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,14 @@
+<body>
+    <div class="container answer-page">
+        <h1>Stupid Coaching</h1>
+        <div class="message user">
+            <p><%=@questions%></p>
+            <p class="author">—You</p>
+        </div>
+        <div class="message coach">
+            <p><%=@answer%></p>
+            <p class="author">—Your coach</p>
+        </div>
+        <a <%= link_to "Reposer une question", '/ask' %>></a>
+    </div>
+</body>
